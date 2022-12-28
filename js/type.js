@@ -64,8 +64,8 @@ function escuchar() {
     msg.lang = "es-ES";
     window.speechSynthesis.speak(msg);
 }
+
 btnEncriptar.onclick = encriptar;
 btnDesencriptar.onclick = desencriptar;
 btnCopiar.onclick = copiar;
 btnHablar.onclick = escuchar;
-btnHablar.onclick = limpiar;
