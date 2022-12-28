@@ -1,1 +1,324 @@
+/*Sources*/
+@font-face {
+	font-family: "montserrat";
+	src: url(..//fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
 
+@font-face {
+	font-family: "Orbitron";
+	src: url(..//fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+/*Styles Généraux*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+/*Corps du conteneur*/
+body {
+	width: 1440px;
+	height: 1024px;
+
+	max-width: 1340px;
+	max-height: 625px;
+}
+
+/*Fond d'écran*/
+video {
+	position: fixed;
+	
+	width: 1350px;
+	height: 620;
+	
+	top: 50%;
+	left: 50%;
+
+	transform: translateX(-50%) translateY(-50%);
+	z-index: -1;
+}
+
+
+/*Conteneur d'en-*/
+header {
+	width: 1325px;
+	display: flex;
+	padding: 5px;
+	margin: 5px;
+}
+
+.titre {
+	width: 50%;
+	
+	text-align: center;
+	justify-content: space-between;
+	line-height: 60px;
+
+	padding: 5px;
+	margin: 5px;
+	color: white;
+
+	font-family: "Orbitron";
+}
+
+/*Conteneur de navigation*/
+nav {
+	width: 50%;
+
+	padding: 5px;
+	margin: 5px;
+}
+
+ul {
+	height: 50%;
+	display: flex;
+	flex-direction: row-reverse;
+
+	justify-content: space-around;
+
+	padding: 5px;
+	margin: 5px;
+
+	list-style: none;
+}
+
+li {
+	line-height: 35px;
+
+	padding: 5px;
+	margin: 5px;
+}
+
+a {
+	padding: 5px;
+	margin: 5px;
+
+	text-decoration: none;
+	color: white;
+	font-family: "montserrat";
+}
+
+/*Contenu principal */
+main {
+	display: flex;
+	width: 1325px;
+
+	padding: 5px;
+	margin: 5px;
+}
+
+/*Section un*/
+.saisie-de-texte {
+
+	padding: 5px;
+	margin: 5px;
+
+	width:
+		50%;
+	height: auto;
+}
+
+#texte-1 {
+	padding: 5px;
+	margin: 5px;
+}
+
+#message {
+	padding: 5px;
+	margin: 5px;
+
+	resize: none;
+
+	color: white;
+	font-family: "montserrat";
+	font-size: 12px;
+
+	background: #200122;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #6f0000, #200122);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #6f000073, #2001221e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+/*Boutons de la première section*/
+#crypter {
+	color: white;
+	background: none;
+	width: 100px;
+	font-size: 12px;
+	padding: 15px;
+	margin: 5px;
+	transition: 0.2s;
+
+	font-family: "Orbitron";
+	font-size: 10px;
+}
+
+#crypter:hover {
+	background: #31025385;
+	box-shadow: 0 0 10px #31025385, 0 0 40px #31025385, 0 0 60px #31025385;
+	transition-delay: 0.1s;
+}
+
+#décrypter {
+	color: white;
+	background: none;
+	width: 100px;
+	font-size: 12px;
+	padding: 15px;
+	margin: 5px;
+	transition: 0.2s;
+
+	font-family: "Orbitron";
+	font-size: 10px;
+}
+
+#décrypter:hover {
+	background: #31025385;
+	box-shadow: 0 0 10px #31025385, 0 0 40px #31025385, 0 0 60px #31025385;
+	transition-delay: 0.1s;
+}
+
+#nettoyer {
+	color: white;
+	background: none;
+	width: 100px;
+	font-size: 12px;
+	padding: 15px;
+	margin: 5px;
+	transition: 0.2s;
+
+	font-family: "Orbitron";
+	font-size: 10px;
+}
+
+#nettoyer:hover {
+	background: #31025385;
+	box-shadow: 0 0 10px #31025385, 0 0 40px #31025385, 0 0 60px #31025385;
+	transition-delay: 0.1s;
+}
+
+
+/*section deux*/
+.résultat-de-texte {
+	padding: 5px;
+	margin: 5px;
+
+	width: 50%;
+	height: auto;
+}
+
+#texte-2 {
+	padding: 5px;
+	margin: 5px;
+}
+
+#résultat {
+	color: white;
+
+	background: #1E9600;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff000031, #fff20010, #1e96000c);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#résultat {
+	border: 2px solid yellow;
+	padding: 5px;
+	margin: 5px;
+
+	resize: none;
+
+	font-family: "montserrat";
+	font-size: 12px;
+}
+
+/*boutons de la deuxième section*/
+#copier {
+	color: white;
+	background: none;
+	width: 100px;
+	font-size: 12px;
+	padding: 15px;
+	margin: 5px;
+	transition: 0.2s;
+
+	font-family: "Orbitron";
+	font-size: 10px;
+}
+
+#copier:hover {
+	background: #31025385;
+	box-shadow: 0 0 10px #31025385, 0 0 40px #31025385, 0 0 60px #31025385;
+	transition-delay: 0.1s;
+}
+
+#écouter {
+	color: white;
+	background: none;
+	width: 100px;
+	font-size: 12px;
+	padding: 15px;
+	margin: 5px;
+	transition: 0.2s;
+
+	font-family: "Orbitron";
+	font-size: 10px;
+}
+
+#écouter:hover {
+	background: #31025385;
+	box-shadow: 0 0 10px #31025385, 0 0 40px #31025385, 0 0 60px #31025385;
+	transition-delay: 0.1s;
+}
+
+/*Conteneur de pied de page*/
+footer {
+	height: 60px;
+	width: 1325px;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+.pied-de-page {
+	float: right;
+	padding: 5px;
+	margin: 10px;
+	color: yellow;
+
+	font-family: "Orbitron";
+	font-size: 14px;	
+}
+
+@media screen and (max-width:480px) {
+	/*CONTENEDORES*/
+	body, header, main, footer{
+		width: 450px;
+		height: auto;
+	}
+	/*CONTENIDO*/
+	nav {
+		width: 150px;
+		height: 50px;
+	}
+	/*CONTENIDO*/
+	.titre, .contact, .langage {
+		font-size: 14px;
+		line-height: 25px;
+	}
+	#message, #résultat {
+		width: 160px;
+	}
+}
