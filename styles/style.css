@@ -42,6 +42,7 @@ video {
 }
 
 
+
 /*Conteneur d'en-tête*/
 header {
 	width: 1325px;
@@ -52,7 +53,7 @@ header {
 
 .titre {
 	width: 50%;
-	
+
 	text-align: center;
 	justify-content: space-between;
 	line-height: 60px;
@@ -116,8 +117,7 @@ main {
 	padding: 5px;
 	margin: 5px;
 
-	width:
-		50%;
+	width: 50%;
 	height: auto;
 }
 
@@ -142,7 +142,7 @@ main {
 	/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #6f000073, #2001221e);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	
+
 }
 
 /*Boutons de la première section*/
@@ -298,32 +298,112 @@ footer {
 	color: yellow;
 
 	font-family: "Orbitron";
-	font-size: 14px;	
+	font-size: 14px;
 }
 
 @media screen and (max-width:480px) {
-	/*Corps du conteneur*/
+
 	body {
-		width: 450px;
-		height: 810px;
+		width: 468px;
+		height: 800px;
+		padding: 2px;
+		margin: 2px;
 	}
-	/*Conteneurs*/
-	header, main, footer{
-		width: 450px;
+
+	video {	
+		width: 1440px;
 		height: auto;
-		
 	}
-	/*Conteneur de navigation*/
+
+	header {
+		width: 455px;
+		height: 100px;
+		padding: 2px;
+		margin: 2px;
+	}
+
 	nav {
-		width: 150px;
-		height: 50px;
+		width: 50%;
+		height: 90%;
+		padding: 1px;
+		margin: 1px;
 	}
-	/*Conteneur de contenu*/
-	.titre, .contact, .langage {
-		font-size: 14px;
-		line-height: 25px;
+
+	ul {
+		height: 85%;
+		display: flex;
+
+		padding: 2.5px;
+		margin: 2.5px;
 	}
+
+	li {
+		height: 65%;
+
+		padding: 5px;
+		margin: 5px;
+		line-height: 50px;
+	}
+
+	a {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.titre {
+		width: 50%;
+		height: 90%;
+		padding: 1px;
+		margin: 1px;
+		font-size: 12px;
+		line-height: 40px;
+	}
+
+	main {
+		width: 455px;
+		height: 400px;
+
+		padding: 2px;
+		margin: 2px;
+	}
+
+	section {
+		width: 180px;
+		height: 400px;
+
+		padding: 2px;
+		margin: 2px;
+	}
+
+	form {
+		width: 180px;
+		height: 350px;
+
+		padding: 2px;
+		margin: 2px;
+	}
+
+	button {
+		width: 1px;
+		height: 1px;
+		padding: 2px;
+		margin: 2px;
+	}
+
 	#message, #résultat {
-		width: 160px;
+		width: 170px;
+		height: 200px;
+
+		padding: 2px;
+		margin: 2px;
+	}
+
+	footer {
+		padding: 2px;
+		margin: 2px;
+
+		height: 95px;
+		width: 455px;
+		line-height: 60px;
 	}
 }
